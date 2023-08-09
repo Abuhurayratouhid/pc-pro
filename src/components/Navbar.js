@@ -29,26 +29,39 @@ const Navbar = () => {
   //     });
   //   };
   return (
-    <nav className="bg-primary">
+    <nav className="bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <Link className="text-2xl font-bold " href="/">
-              PC-pro
+            <Link className="text-2xl font-bold text-primary" href="/">
+              PC-PRO
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-4 flex space-x-4  uppercase">
-              <Link href="/">Home</Link>
-              <Link href="/">Products</Link>
-              <Link href="/">pc builder</Link>
-              <Link href="/wishList">wishList</Link>
+            <div className="ml-4 flex space-x-4 text-accent  font-semibold uppercase">
+              <Link className="hover:text-primary duration-300" href="/">
+                Home
+              </Link>
+              <Link className="hover:text-primary duration-300" href="/">
+                Products
+              </Link>
+              <Link className="hover:text-primary duration-300" href="/">
+                pc builder
+              </Link>
+              <Link
+                className="hover:text-primary duration-300"
+                href="/wishList"
+              >
+                wishList
+              </Link>
               {user?.email ? (
                 <p onClick={handleLogout} className="cursor-pointer">
                   Logout
                 </p>
               ) : (
-                <Link href="/login">Login</Link>
+                <Link className="hover:text-primary duration-300" href="/login">
+                  Login
+                </Link>
               )}
             </div>
           </div>
@@ -77,7 +90,7 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3  text-center uppercase space-y-1 sm:px-3 flex flex-col">
+          <div className="px-2 pt-2 pb-3  text-center text-accent uppercase space-y-1 sm:px-3 flex flex-col">
             <Link href="/" onClick={toggleMenu}>
               Home
             </Link>

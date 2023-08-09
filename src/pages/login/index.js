@@ -1,18 +1,16 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import RootLayout from "@/components/layout/RootLayout";
 import React from "react";
 
-const Home = () => {
+const Login = () => {
   return (
     <div className="min-h-screen">
-      <h1>Home page</h1>
+      <h1>Login page</h1>
     </div>
   );
 };
 
-export default Home;
+export default Login;
 
-Home.getLayout = function getLayout(page) {
+Login.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };

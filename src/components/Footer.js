@@ -5,18 +5,21 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <footer className="relative z-10 bg-secondary text-accent pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container">
-          <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap -mx-4 pl-5">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="w-full mb-10">
-                <Link href="/#" className="mb-6 inline-block max-w-[160px]">
+                <Link
+                  href="/#"
+                  className="mb-6 inline-block text-primary max-w-[160px]"
+                >
                   {/* <Image
                     src="https://cdn.tailgrids.com/1.0/assets/images/logo/logo.svg"
                     alt="logo"
                     className="max-w-full"
                   /> */}
-                  Logo
+                  PC-PRO
                 </Link>
                 <p className="text-base mb-7 text-body-color">
                   Sed ut perspiciatis undmnis is iste natus error sit amet
@@ -120,7 +123,7 @@ const Footer = () => {
                 </div>
                 <p className="text-base text-body-color">
                   {" "}
-                  © {new Date().getFullYear()} TailGrids{" "}
+                  © {new Date().getFullYear()} PC-PRO{" "}
                 </p>
               </div>
             </div>
