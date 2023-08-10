@@ -28,6 +28,21 @@ const Navbar = () => {
   //       toast.success("Successfully Logout");
   //     });
   //   };
+  const options = [
+    'CPU / Processor',
+    'Motherboard',
+    'RAM',
+    'Power Supply Unit',
+    'Storage Device',
+    'Monitor',
+    'Others',
+  ];
+  const DropdownMenu = () => {
+    const [selectedOption, setSelectedOption] = useState('');
+  
+    const handleSelect = (event) => {
+      setSelectedOption(event.target.value);
+    };
   return (
     <nav className="bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,7 +60,7 @@ const Navbar = () => {
               <Link className="hover:text-primary duration-300" href="/">
                 Products
               </Link>
-              <Link className="hover:text-primary duration-300" href="/">
+              <Link className="hover:text-primary duration-300" href="/pcBuilder">
                 pc builder
               </Link>
               <Link
